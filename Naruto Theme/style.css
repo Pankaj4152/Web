@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+.whole{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+}
+
+.block{
+    display: flex;
+    width: 25%;
+    border: 2px solid white;
+    border-width: 0 1px;
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
+
+
+
+.first-block{
+    border-left-width: 2px;
+    transition-property: background-image;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+.first-block:hover{
+    background-image: url('naruto_pose.jpg');
+}
+
+.second-block:hover{
+    background-image: url('sauske_pose.png');
+}
+
+.third-block:hover{
+    background-image: url('obito_pose.jpg');
+}
+
+.forth-block{
+    border-right-width: 2px;
+}
+
+.forth-block:hover{
+    background-image: url('madara_pose.jpg');
+}
+
+
+
+.content{
+    margin-top: 60px;
+    background-color: transparent;
+}
+
+.number{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.name{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.desc{
+    width: 50%;
+    transition: color 0.3s ease;
+}
+
+.text{
+    visibility: hidden;
+}
+
+.block:hover .text{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    visibility: visible;
+}
+
+.arrow{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 150px;
+}
+
+.arrow-icon{
+    padding: px;
+    font-size: 1.2rem;
+    rotate: 45deg;
+    background-color: transparent;
+}
